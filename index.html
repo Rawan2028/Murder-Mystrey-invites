@@ -1,0 +1,236 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body { background: #0a0a0a; }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  .invitation {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+    border: 1px solid #4a3f35;
+    padding: 60px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .invitation::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(212, 103, 62, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  
+  .invitation::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: -50%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(147, 51, 86, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .mask-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+  }
+  
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #f5f5f5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: #d4a574;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #4a3f35, transparent);
+    margin: 30px 0;
+  }
+  
+  .message-section {
+    margin: 30px 0;
+  }
+  
+  .message-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #b8b8b8;
+    margin: 12px 0;
+  }
+  
+  .emphasis {
+    color: #d4a574;
+    font-weight: 600;
+  }
+  
+  .warning {
+    background: rgba(147, 51, 86, 0.15);
+    border: 1px solid rgba(212, 103, 62, 0.3);
+    padding: 20px;
+    margin: 25px 0;
+    font-size: 16px;
+    color: #f5f5f5;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .details-section {
+    margin-top: 40px;
+  }
+  
+  .detail-item {
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  
+  .detail-label {
+    color: #d4a574;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  .detail-value {
+    color: #f5f5f5;
+    font-size: 18px;
+  }
+  
+  .requirement {
+    margin-top: 35px;
+    padding: 20px;
+    background: rgba(212, 103, 62, 0.1);
+    border-left: 2px solid #d4a574;
+  }
+  
+  .requirement-title {
+    color: #d4a574;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  
+  .requirement-list {
+    color: #b8b8b8;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  .closing {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #b8b8b8;
+    font-style: italic;
+  }
+  
+  .footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #6b6b6b;
+    letter-spacing: 1px;
+  }
+  
+  @media (max-width: 600px) {
+    .invitation { padding: 40px 25px; }
+    .title { font-size: 36px; }
+  }
+</style>
+
+<div class="container">
+  <div class="invitation">
+    <div class="content">
+      <div class="mask-icon">🎭</div>
+      
+      <div class="header">
+        <div class="title">The Last Masquerade</div>
+        <div class="subtitle">An Evening of Secrets, Lies & One Final Truth</div>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <div class="message-section">
+        <p class="message-text"><span class="emphasis">You have been invited.</span></p>
+        <p class="message-text">Not everyone at the masquerade is innocent.</p>
+        <p class="message-text">Not everyone is telling the truth.</p>
+        <p class="message-text">And before the night is over, someone will be dead.</p>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <div class="message-section">
+        <p class="message-text">You have been invited to a private gathering at the <span class="emphasis">Laurent Estate.</span></p>
+        <p class="message-text">Come dressed for the occasion.</p>
+        <p class="message-text">Come prepared to investigate.</p>
+        <p class="message-text">And above all...</p>
+      </div>
+      
+      <div class="warning">TRUST NO ONE</div>
+      
+      <div class="details-section">
+        <div class="detail-item">
+          <span class="detail-label">When</span>
+          <span class="detail-value">Friday · 7:00 PM</span>
+        </div>
+        
+        <div class="detail-item">
+          <span class="detail-label">Where</span>
+          <span class="detail-value">Private Chalet</span>
+        </div>
+      </div>
+      
+      <div class="requirement">
+        <div class="requirement-title">Requirements</div>
+        <div class="requirement-list">🎭 Masks required<br>🕵️ Investigation skills essential<br>🤫 Discretion requested</div>
+      </div>
+      
+      <div class="closing">
+        The night awaits. Will you accept?
+      </div>
+      
+      <div class="footer">
+        RSVP WITH CAUTION
+      </div>
+    </div>
+  </div>
+</div>
